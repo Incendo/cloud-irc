@@ -21,19 +21,19 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-package cloud.commandframework.pircbotx.arguments;
+package org.incendo.cloud.pircbotx.arguments;
 
-import cloud.commandframework.caption.CaptionVariable;
-import cloud.commandframework.component.CommandComponent;
-import cloud.commandframework.context.CommandContext;
-import cloud.commandframework.context.CommandInput;
-import cloud.commandframework.exception.parsing.ParserException;
-import cloud.commandframework.parser.ArgumentParseResult;
-import cloud.commandframework.parser.ArgumentParser;
-import cloud.commandframework.parser.ParserDescriptor;
-import cloud.commandframework.pircbotx.PircBotXCommandManager;
 import org.apiguardian.api.API;
 import org.checkerframework.checker.nullness.qual.NonNull;
+import org.incendo.cloud.caption.CaptionVariable;
+import org.incendo.cloud.component.CommandComponent;
+import org.incendo.cloud.context.CommandContext;
+import org.incendo.cloud.context.CommandInput;
+import org.incendo.cloud.exception.parsing.ParserException;
+import org.incendo.cloud.parser.ArgumentParseResult;
+import org.incendo.cloud.parser.ArgumentParser;
+import org.incendo.cloud.parser.ParserDescriptor;
+import org.incendo.cloud.pircbotx.PircBotXCommandManager;
 import org.pircbotx.PircBotX;
 import org.pircbotx.User;
 import org.pircbotx.exception.DaoException;

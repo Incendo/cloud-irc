@@ -21,28 +21,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-package cloud.commandframework.pircbotx;
+package org.incendo.cloud.pircbotx;
 
-import cloud.commandframework.CloudCapability;
-import cloud.commandframework.CommandManager;
-import cloud.commandframework.caption.Caption;
-import cloud.commandframework.caption.CaptionProvider;
-import cloud.commandframework.exception.ArgumentParseException;
-import cloud.commandframework.exception.CommandExecutionException;
-import cloud.commandframework.exception.InvalidCommandSenderException;
-import cloud.commandframework.exception.InvalidSyntaxException;
-import cloud.commandframework.exception.NoPermissionException;
-import cloud.commandframework.exception.NoSuchCommandException;
-import cloud.commandframework.exception.handling.ExceptionContext;
-import cloud.commandframework.exception.handling.ExceptionHandler;
-import cloud.commandframework.execution.ExecutionCoordinator;
-import cloud.commandframework.internal.CommandRegistrationHandler;
-import cloud.commandframework.key.CloudKey;
-import cloud.commandframework.pircbotx.arguments.UserParser;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 import org.apiguardian.api.API;
 import org.checkerframework.checker.nullness.qual.NonNull;
+import org.incendo.cloud.CloudCapability;
+import org.incendo.cloud.CommandManager;
+import org.incendo.cloud.caption.Caption;
+import org.incendo.cloud.caption.CaptionProvider;
+import org.incendo.cloud.exception.ArgumentParseException;
+import org.incendo.cloud.exception.CommandExecutionException;
+import org.incendo.cloud.exception.InvalidCommandSenderException;
+import org.incendo.cloud.exception.InvalidSyntaxException;
+import org.incendo.cloud.exception.NoPermissionException;
+import org.incendo.cloud.exception.NoSuchCommandException;
+import org.incendo.cloud.exception.handling.ExceptionContext;
+import org.incendo.cloud.exception.handling.ExceptionHandler;
+import org.incendo.cloud.execution.ExecutionCoordinator;
+import org.incendo.cloud.internal.CommandRegistrationHandler;
+import org.incendo.cloud.key.CloudKey;
+import org.incendo.cloud.pircbotx.arguments.UserParser;
 import org.pircbotx.PircBotX;
 import org.pircbotx.User;
 import org.pircbotx.hooks.types.GenericMessageEvent;
@@ -70,7 +70,7 @@ public class PircBotXCommandManager<C> extends CommandManager<C> {
     );
     /**
      * Meta key for accessing the {@link org.pircbotx.PircBotX} instance from a
-     * {@link cloud.commandframework.context.CommandContext} instance
+     * {@link org.incendo.cloud.context.CommandContext} instance
      */
     public static final String PIRCBOTX_META_KEY = "__internal_pircbotx__";
     /**

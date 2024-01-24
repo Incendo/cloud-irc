@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-package cloud.commandframework.pircbotx;
+package org.incendo.cloud.pircbotx;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 import org.pircbotx.hooks.ListenerAdapter;
